@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: BlanchedAlmond;" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="RestoringMain">
+   <children>
+      <VBox fx:id="Top" alignment="CENTER" layoutX="245.0" prefHeight="87.0" prefWidth="310.0" spacing="10.0">
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" text="COA is FUN" textAlignment="CENTER">
+               <font>
+                  <Font name="Calibri Bold" size="27.0" />
+               </font>
+            </Label>
+            <Label text="Restoring Division by Shivam Kotak">
+               <font>
+                  <Font name="Calibri Bold Italic" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <VBox fx:id="Left" prefHeight="500.0" prefWidth="120.0" spacing="10.0">
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+         <children>
+            <Label fx:id="Divisor" text="Dividend :" textAlignment="CENTER" translateY="100.0">
+               <font>
+                  <Font name="Calibri" size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="TextField1" translateY="100.0" />
+            <Label fx:id="Dividend" text="Divisor :" translateY="120.0">
+               <font>
+                  <Font name="Calibri" size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="TextField2" translateY="120.0" />
+            <Button mnemonicParsing="false" onAction="#EnterButtonEvent" text="Enter" translateX="28.0" translateY="120.0" />
+         </children></VBox>
+      <TextArea fx:id="TextArea1" layoutX="120.0" layoutY="84.0" prefHeight="355.0" prefWidth="615.0" />
+      <Label fx:id="Qb" layoutX="216.0" layoutY="448.0" text="Quotient (Binary) :" />
+      <Label fx:id="Rb" layoutX="492.0" layoutY="448.0" text="Remainder (Binary) :" />
+      <Label fx:id="Qd" layoutX="207.0" layoutY="465.0" text="Quotient (Decimal) :" />
+      <Label fx:id="Rd" layoutX="482.0" layoutY="465.0" text="Remainder (Decimal) :" />
+      <Label fx:id="Qb_ans" layoutX="320.0" layoutY="448.0" prefHeight="17.0" prefWidth="56.0" text="00000000" AnchorPane.bottomAnchor="35.0" AnchorPane.leftAnchor="320.0" AnchorPane.rightAnchor="424.0" AnchorPane.topAnchor="448.0" />
+      <Label fx:id="Qd_ans" layoutX="320.0" layoutY="465.0" prefHeight="17.0" prefWidth="24.0" text="000" />
+      <Label fx:id="Rb_ans" layoutX="606.0" layoutY="448.0" text="00000000" />
+      <Label fx:id="Rd_ans" layoutX="606.0" layoutY="465.0" text="000" />
+   </children>
+</AnchorPane>
